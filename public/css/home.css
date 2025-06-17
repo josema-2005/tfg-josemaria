@@ -1,0 +1,211 @@
+.post-estatico {
+  margin: 10rem 20px 4rem;
+  padding: 2rem;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.post-estatico .post-container {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.post-estatico .post-img {
+  flex: 0 0 300px;   
+}
+.post-estatico .post-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.post-estatico .post-texto {
+  flex: 1;
+}
+.post-estatico h2 {
+  color: #ff5555;
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+.post-estatico .post-texto p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+.post-estatico .post-texto a {
+  display: inline-block;
+  color: #ff5555;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+.post-estatico .post-texto a:hover {
+  color: #dd3333;
+  text-decoration: underline;
+}
+.post-estatico .post-texto {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.post-fecha {
+  font-size: 0.85rem;
+  color: #777;  
+  align-self: flex-end;  
+  margin-top: 55px;
+}
+
+@media (max-width: 768px) {
+  .post-estatico .post-container {
+    flex-direction: column;
+  }
+  .post-estatico .post-img {
+    flex: none;
+    width: 100%;
+  }
+}
+
+.recommended-section {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.recommended-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.recommended-card {
+  border: 1px solid #CCCCCC;
+  border-radius: 4px;
+  padding: 1rem;
+  text-align: center;
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.recommended-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 0.75rem;
+}
+
+.recommended-card h3 {
+  font-size: 1.25rem;
+  color: #E55A5A;
+  margin: 0.5rem 0;
+}
+.recommended-card p {
+  font-size: 1rem;
+  color: #333333;
+  margin: 0.5rem 0;
+}
+
+.recommended-card button {
+  margin-top: auto;
+  padding: 0.5rem 1rem;
+  background-color: #FF7F7F;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+.recommended-card button:hover {
+  background-color: #E55A5A;
+}
+
+.recommended-card h3 a {
+  color:  #E55A5A;
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 2px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+
+.recommended-card h3 a:hover {
+  color: #FF7F7F;
+}
+
+.recommended-card h3 a:hover::after {
+  transform: scaleX(1);
+}
+
+@media (max-width: 1024px) {
+  .recommended-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .recommended-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.info-veterinaria {
+  margin: 8rem 20px 6rem;
+  padding: 2rem;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+.info-veterinaria h2 {
+  color: #ff5555;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.info-veterinaria p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.info-veterinaria a {
+  display: inline-block;
+  background-color: #ff5555;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.7rem 1.5rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.info-veterinaria a:hover {
+  background-color: #dd3333;
+}
+
+@media (max-width: 768px) {
+  .info-veterinaria {
+    margin: 6rem 20px 4rem;
+    padding: 1.5rem;
+  }
+  .info-veterinaria h2 {
+    font-size: 1.75rem;
+  }
+}
