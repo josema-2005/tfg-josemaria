@@ -29,51 +29,44 @@ Desarrollado con **Laravel 10**, **MySQL** (XAMPP), **Blade**, **CSS** y **JavaS
 
 ## 🚀 Características
 
-1. **Autenticación**  
-   - Registro y login “a mano”  
-   - Protección de rutas con middleware `auth` y `guest`
-
-2. **Blog**  
-   - Listado de posts ordenados por fecha  
-   - Detalle de artículo con fecha formateada
-
-3. **Tienda**  
-   - Catálogo responsive (3-2-1 columnas)  
-   - Filtro por precio mínimo/máximo  
-   - PDP (página de detalle)
-
-4. **Carrito**  
-   - Añadir, actualizar cantidad y eliminar  
-   - Almacenamiento en sesión  
-   - Subtotales y total calculados
-
-5. **Citas veterinarias**  
-   - Formulario de fecha/hora con validación  
-   - Listado “Mis citas” del usuario
-
-6. **Perfil de usuario**  
-   - Edición de nombre, email y contraseña  
-   - CSRF y hashing de contraseña
-
-7. **Responsive design**  
-   - Media queries en CSS  
-   - Menú hamburguesa en móvil
-
-8. **Buenas prácticas**  
-   - Partials Blade  
-   - Git para control de versiones  
-   - Código organizado y comentado
+- **Autenticación**
+  - Registro y login “a mano”  
+  - Middleware `auth` y `guest`
+- **Blog**
+  - Listado de posts ordenados por fecha  
+  - Vista de detalle con fecha formateada
+- **Tienda**
+  - Catálogo responsive (3-2-1 columnas)  
+  - Filtro por precio mínimo/máximo  
+  - Página de detalle del producto
+- **Carrito**
+  - Añadir, actualizar y eliminar productos  
+  - Sesión para almacenamiento  
+  - Subtotales y total
+- **Citas veterinarias**
+  - Formulario con validación  
+  - Listado de citas del usuario
+- **Perfil de usuario**
+  - Editar nombre, email y contraseña  
+  - Protección CSRF y hashing
+- **Responsive Design**
+  - Media queries en CSS  
+  - Menú hamburguesa en móvil
+- **Buenas prácticas**
+  - Partials en Blade  
+  - Git para control de versiones  
+  - Código limpio y comentado
 
 ---
 
 ## 🧰 Tecnologías
 
-- **Lenguajes**: PHP 8, HTML5, CSS3, JavaScript (vanilla)  
-- **Framework**: Laravel 10  
-- **Base de datos**: MySQL (XAMPP)  
-- **Servidor**: Apache  
-- **Vistas**: Blade  
-- **Control de versiones**: Git / GitHub  
+- **Lenguajes:** PHP 8, HTML5, CSS3, JavaScript (vanilla)  
+- **Framework:** Laravel 10  
+- **Base de datos:** MySQL (XAMPP)  
+- **Servidor:** Apache  
+- **Vistas:** Blade  
+- **Control de versiones:** Git / GitHub  
 
 ---
 
@@ -90,7 +83,6 @@ npm install
 
 # 3. Configurar entorno
 cp .env.example .env
-# Rellena .env con tus datos de BD, APP_URL, etc.
 
 # 4. Generar clave de Laravel
 php artisan key:generate
@@ -101,19 +93,22 @@ php artisan migrate
 # 6. (Opcional) Sembrar datos de prueba
 # php artisan db:seed
 
-# 7. Compilar assets (si usas Vite/Mix)
+# 7. Compilar assets
 # npm run dev
 
 # 8. Levantar servidor local
 php artisan serve
-Visita http://127.0.0.1:8000.
+```
 
-⚙️ Configuración del entorno
-En tu .env define al menos:
+Visita: [http://127.0.0.1:8000](http://127.0.0.1:8000)
 
-env
-Copiar
-Editar
+---
+
+## ⚙️ Configuración del entorno
+
+En el archivo `.env`, define al menos:
+
+```env
 APP_NAME="Mundo Animal"
 APP_URL=http://127.0.0.1:8000
 
@@ -123,42 +118,44 @@ DB_PORT=3306
 DB_DATABASE=tfg-josemaria
 DB_USERNAME=root
 DB_PASSWORD=
-Asegúrate de que .env está en .gitignore y dispones de un .env.example.
+```
 
-▶️ Uso
-Registro / Login
-/registro y /login
+✅ Asegúrate de que `.env` está en `.gitignore` y tienes un `.env.example`.
 
-Tras registro, inicio de sesión automático.
+---
 
-Home
-/ — 3 productos recomendados + post destacado.
+## ▶️ Uso
 
-Blog
-/blog — listado
+### 📥 Registro / Login
+- `/registro` y `/login` — Registro e inicio de sesión  
+- Inicio de sesión automático tras registro
 
-/blog/{slug} — detalle
+### 🏠 Página principal
+- `/` — Muestra 3 productos recomendados y un post destacado
 
-Tienda
-/tienda — catálogo + filtro precio
+### 📰 Blog
+- `/blog` — Listado de posts  
+- `/blog/{slug}` — Detalle del post
 
-/tienda/{id} — detalle + “Añadir al carrito”
+### 🛒 Tienda
+- `/tienda` — Catálogo de productos con filtro por precio  
+- `/tienda/{id}` — Detalle del producto + botón de añadir al carrito
 
-Carrito
-/carrito — ver/gestionar ítems (auth)
+### 🧺 Carrito
+- `/carrito` — Visualizar, actualizar y eliminar productos (auth)
 
-Citas
-/appointments/create — formulario
+### 🗓️ Citas
+- `/appointments/create` — Formulario de cita  
+- `/appointments` — Listado de citas del usuario (auth)
 
-/appointments — listado de citas (auth)
+### 👤 Perfil
+- `/perfil` — Editar nombre, email y contraseña (auth)
 
-Perfil
-/perfil — editar datos (auth)
+---
 
-📂 Estructura de carpetas
-pgsql
-Copiar
-Editar
+## 📂 Estructura de carpetas
+
+```text
 app/
 ├─ Http/Controllers/
 │   ├─ AuthController.php
@@ -196,102 +193,108 @@ public/
 │   ├─ appointment.css
 │   └─ profile.css
 └─ images/
-🗄️ Esquema de base de datos
-Tablas:
-users:
-id
+```
 
-name
+---
 
-email
+## 🗄️ Esquema de base de datos
 
-password
+### Tablas principales
 
-created_at
+#### `users`
+- id  
+- name  
+- email  
+- password  
+- created_at  
+- updated_at
 
-updated_at
+#### `posts`
+- id  
+- titulo  
+- slug  
+- cuerpo  
+- fecha_de_publicacion  
+- id_usuario  
+- created_at  
+- updated_at
 
-posts:
-id
+#### `products`
+- id  
+- nombre  
+- descripcion  
+- precio  
+- imagen  
+- created_at  
+- updated_at
 
-titulo
+#### `appointments`
+- id  
+- user_id  
+- fecha  
+- hora  
+- motivo  
+- created_at  
+- updated_at
 
-slug
+### Relaciones
 
-cuerpo
+- `User` → hasMany → `Post`  
+- `User` → hasMany → `Appointment`
 
-fecha_de_publicacion
+---
 
-id_usuario
+## 🔗 Rutas principales
 
-created_at
+| Método | Ruta                   | Nombre               | Descripción                          |
+|--------|------------------------|----------------------|--------------------------------------|
+| GET    | /                      | home                 | Página de inicio                     |
+| GET    | /registro              | registro             | Formulario de registro               |
+| POST   | /registro              | —                    | Procesa registro                     |
+| GET    | /login                 | login                | Formulario de login                  |
+| POST   | /login                 | —                    | Procesa login                        |
+| POST   | /cerrarSesion          | cerrarSesion         | Cierra sesión                        |
+| GET    | /blog                  | blog.index           | Listado de posts                     |
+| GET    | /blog/{slug}           | blog.show            | Detalle de post                      |
+| GET    | /tienda                | tienda.index         | Catálogo de productos                |
+| GET    | /tienda/{id}           | tienda.show          | Detalle de producto                  |
+| GET    | /carrito               | carrito.index        | Ver carrito (auth)                   |
+| POST   | /carrito/add           | carrito.add          | Añadir producto al carrito           |
+| POST   | /carrito/remove        | carrito.remove       | Eliminar producto del carrito        |
+| POST   | /carrito/update        | carrito.update       | Actualizar cantidad                  |
+| GET    | /appointments/create   | appointments.create  | Formulario para nueva cita (auth)    |
+| POST   | /appointments          | appointments.store   | Reservar cita                        |
+| GET    | /appointments          | appointments.index   | Listado de citas (auth)              |
+| GET    | /perfil                | perfil.edit          | Editar perfil (auth)                 |
+| POST   | /perfil                | perfil.update        | Guardar cambios en perfil (auth)     |
 
-updated_at
+---
 
-products:
-id
+## 🤝 Contribuciones
 
-nombre
+1. Haz fork del repositorio  
+2. Crea una nueva rama:
 
-descripcion
+```bash
+git checkout -b feature/TuFeature
+```
 
-precio
+3. Realiza tus cambios y haz commit:
 
-imagen
+```bash
+git commit -m "Descripción del cambio"
+```
 
-created_at
+4. Sube tu rama:
 
-updated_at
+```bash
+git push origin feature/TuFeature
+```
 
-appointments:
-id
+5. Abre un Pull Request y describe tus cambios
 
-user_id
+---
 
-fecha
+## 📄 Licencia
 
-hora
-
-motivo
-
-created_at
-
-updated_at
-
-Relaciones:
-User → hasMany → Post
-
-User → hasMany → Appointment
-
-🔗 Rutas principales
-Método	Ruta	Nombre	Descripción
-GET	/	home	Página de inicio
-GET	/registro	registro	Formulario de registro
-POST	/registro	—	Procesa registro
-GET	/login	login	Formulario de login
-POST	/login	—	Procesa login
-POST	/cerrarSesion	cerrarSesion	Cierra sesión
-GET	/blog	blog.index	Listado de posts
-GET	/blog/{slug}	blog.show	Detalle de post
-GET	/tienda	tienda.index	Catálogo de productos
-GET	/tienda/{id}	tienda.show	Detalle de producto
-GET	/carrito	carrito.index	Ver carrito (auth)
-POST	/carrito/add	carrito.add	Añadir al carrito
-POST	/carrito/remove	carrito.remove	Eliminar del carrito
-POST	/carrito/update	carrito.update	Actualizar cantidad
-GET	/appointments/create	appointments.create	Formulario de cita (auth)
-POST	/appointments	appointments.store	Reservar cita
-GET	/appointments	appointments.index	Listado de citas (auth)
-GET	/perfil	perfil.edit	Formulario editar perfil (auth)
-POST	/perfil	perfil.update	Guardar cambios de perfil
-
-🤝 Contribuciones
-Haz fork de este repositorio.
-
-Crea una rama: git checkout -b feature/TuFeature.
-
-Haz tus cambios y commitea: git commit -m "Describe tu cambio".
-
-Sube tu rama: git push origin feature/TuFeature.
-
-Abre un Pull Request describiendo tus cambios.
+Este proyecto está licenciado bajo la [Licencia MIT](LICENSE).
