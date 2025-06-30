@@ -14,7 +14,7 @@ Desarrollado con **Laravel 10**, **MySQL** (XAMPP), **Blade**, **CSS** y **JavaS
 
 ## 📑 Índice
 
-1. [🚀 Características](#🚀-características)  
+1. [🚀 Características](#características)  
 2. [🧰 Tecnologías](#🧰-tecnologías)  
 3. [💻 Instalación](#💻-instalación)  
 4. [⚙️ Configuración del entorno](#⚙️-configuración-del-entorno)  
