@@ -23,7 +23,6 @@ Desarrollado con **Laravel 10**, **MySQL** (XAMPP), **Blade**, **CSS** y **JavaS
 7. 🗄️ Esquema de base de datos
 8. 🔗 Rutas principales
 9. 🤝 Contribuciones
-10. 📄 Licencia
 
 ---
 
@@ -295,6 +294,3 @@ git push origin feature/TuFeature
 
 ---
 
-## 📄 Licencia
-
-Este proyecto está licenciado bajo la [Licencia MIT](LICENSE).
