@@ -14,16 +14,15 @@ Desarrollado con **Laravel 10**, **MySQL** (XAMPP), **Blade**, **CSS** y **JavaS
 
 ## 📑 Índice
 
-1. [🚀 Características](#-características)  
-2. [🧰 Tecnologías](#-tecnologías)  
-3. [💻 Instalación](#-instalación)  
-4. [⚙️ Configuración del entorno](#-configuración-del-entorno)  
-5. [▶️ Uso](#-uso)  
-6. [📂 Estructura de carpetas](#-estructura-de-carpetas)  
-7. [🗄️ Esquema de base de datos](#-esquema-de-base-de-datos)  
-8. [🔗 Rutas principales](#-rutas-principales)  
-9. [🤝 Contribuciones](#-contribuciones)  
-10. [📄 Licencia](#-licencia)  
+1. [Características](#características)  
+2. [Tecnologías](#tecnologías)  
+3. [Instalación](#instalación)  
+4. [Configuración del entorno](#configuración-del-entorno)  
+5. [Uso](#uso)  
+6. [Estructura de carpetas](#estructura-de-carpetas)  
+7. [Esquema de base de datos](#esquema-de-base-de-datos)  
+8. [Rutas principales](#rutas-principales)  
+9. [Contribuciones](#contribuciones)  
 
 ---
 
@@ -294,7 +293,3 @@ git push origin feature/TuFeature
 5. Abre un Pull Request y describe tus cambios
 
 ---
-
-## 📄 Licencia
-
-Este proyecto está licenciado bajo la [Licencia MIT](LICENSE).
