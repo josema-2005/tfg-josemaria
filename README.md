@@ -14,16 +14,16 @@ Desarrollado con **Laravel 10**, **MySQL** (XAMPP), **Blade**, **CSS** y **JavaS
 
 ## 📑 Índice
 
-1. [🚀 Características]
-2. [🧰 Tecnologías]
-3. [💻 Instalación]
-4. [⚙️ Configuración del entorno]
-5. [▶️ Uso]
-6. [📂 Estructura de carpetas]
-7. [🗄️ Esquema de base de datos] 
-8. [🔗 Rutas principales]
-9. [🤝 Contribuciones]
-10. [📄 Licencia]
+1. 🚀 Características
+2. 🧰 Tecnologías
+3. 💻 Instalación
+4. ⚙️ Configuración del entorno
+5. ▶️ Uso]
+6. 📂 Estructura de carpetas
+7. 🗄️ Esquema de base de datos
+8. 🔗 Rutas principales
+9. 🤝 Contribuciones
+10. 📄 Licencia
 
 ---
 
